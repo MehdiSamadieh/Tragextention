@@ -21,11 +21,11 @@
 print(" extended trager ");
 
 ###############################################################################example 1
-qq:=(z^2 -2) ;  T:= [(x[1]^2 - 2)*(x[1]^2 - 3)];
-n:=1;
-R := PolynomialRing([z, x[1]]);
-Trager:=ExtendedTrager(qq,T,n,false);
-Display(Trager,R);
+#qq:=(z^2 -2) ;  T:= [(x[1]^2 - 2)*(x[1]^2 - 3)];
+#n:=1;
+#R := PolynomialRing([z, x[1]]);
+#Trager:=ExtendedTrager(qq,T,n,false);
+#Display(Trager,R);
 ###############################################################################example 2
 #qq:= (z^2 - 3);  T := [x[1]^2 - 2, x[2]^2 - 3]; #qq:= (z^2 - 2)*(z^2 - 3); 
 #n:=2;
@@ -40,14 +40,14 @@ Display(Trager,R);
 #Display(Trager,R);
 #Trager:=ExtendedTrager(qq,T,n,true);
 ################################################################################example 4 
-#qq:=  (z^2  -  x[1]) ;
-#T := [(x[1]^2 - 2)*( x[1]^2 - 3), x[2]^2  -x[1] ];
-#R := PolynomialRing([z, x[1], x[2]]);
-#n:=2;
+qq:=  (z^2  -  x[1]) ;
+T := [(x[1]^2 - 2)*( x[1]^2 - 3), x[2]^2  -x[1] ];
+R := PolynomialRing([z, x[1], x[2]]);
+n:=2;
 ###############################################################################simple example
 
-#Trager:=ExtendedTrager(qq,T,n,false);
-#Display(Trager,R);
+Trager:=ExtendedTrager(qq,T,n,false);
+Display(Trager,R);
 #Trager:=ExtendedTrager(qq,T,n,true);
 
 
